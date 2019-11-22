@@ -1,0 +1,37 @@
+.grid {
+  display:grid;
+  background-color: black;
+  height: 1600px;
+  width: 2000px;
+  grid-gap: 10px;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 500px auto 500px;
+  grid-template-areas:
+  ". a a a a a a a a a a ."
+  "b b b b b b b b b b b b"
+  "c c c c c c c c c c c c"
+}
+.a {
+	grid-area: a;
+}
+
+.b{
+	grid-area: b;
+}
+
+.c{
+	grid-area: c;
+}
+
+.d{
+	grid-area: d;
+}
+
+.box {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  border: 2px grey;
+}
+
+
